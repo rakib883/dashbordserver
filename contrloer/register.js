@@ -1,17 +1,17 @@
-import bcrypt from 'bcrypt';
-import user from '../model/user.js';
-import generateToken from '../config/token.js';
-const saltRounds = 10;
+// import bcrypt from 'bcrypt';
+// import user from '../model/user.js';
+// import generateToken from '../config/token.js';
+// const saltRounds = 10;
 
-const checkEmail = (email) => {
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return regex.test(email);
-};
+// const checkEmail = (email) => {
+//   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   return regex.test(email);
+// };
 
-const hashPassword = async (password) => {
-  const hash = await bcrypt.hash(password, saltRounds);
-  return hash;
-};
+// const hashPassword = async (password) => {
+//   const hash = await bcrypt.hash(password, saltRounds);
+//   return hash;
+// };
 
 const register = async (req, res) => {
   // const userData = req.body;
