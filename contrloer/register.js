@@ -1,7 +1,7 @@
-// import bcrypt from 'bcrypt';
-// import user from '../model/user.js';
-// import generateToken from '../config/token.js';
-// const saltRounds = 10;
+import bcrypt from 'bcrypt';
+import user from '../model/user.js';
+import generateToken from '../config/token.js';
+const saltRounds = 10;
 
 // const checkEmail = (email) => {
 //   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
