@@ -1,4 +1,4 @@
-// import bcrypt from 'bcrypt';
+
 import user from '../model/user.js';
 import generateToken from '../config/token.js';
 const saltRounds = 10;
@@ -8,10 +8,7 @@ const checkEmail = (email) => {
   return regex.test(email);
 };
 
-// const hashPassword = async (password) => {
-//   const hash = await bcrypt.hash(password, saltRounds);
-//   return hash;
-// };
+
 
 const register = async (req, res) => {
   const userData = req.body;
@@ -33,9 +30,7 @@ const register = async (req, res) => {
     return res.status(400).send({ status: "false", message: "Password and Confirm Password must be the same" });
   }
 
-  // Hash password
-  // const hashedPassword = await hashPassword(password);
-
+  
   try {
     // Check if user already exists
     const existingUser = await user.findOne({ email });
