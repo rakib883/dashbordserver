@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import user from '../model/user.js';
+// import user from '../model/user.js';
 // import generateToken from '../config/token.js';
 // const saltRounds = 10;
 
